@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "types": ["node"],
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2021", "dom"]
+  },
+  "files": ["src/main.ts", "src/polyfills.ts"],
+
+  "include": ["src/**/*.d.ts"],
+  "exclude": ["**/*.spec.ts", "src/jest.ts"],
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
+}
